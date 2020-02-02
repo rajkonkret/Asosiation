@@ -40,9 +40,9 @@ public class QiuzData implements CommandLineRunner {
         question4.addAnswer(new Answer("River Amazon", false));
         question4.addAnswer(new Answer("River Godavari", false));
   //      test.addQuestion(question);
-        test.addQuestion(question2);
-        test.addQuestion(question3);
-        test.addQuestion(question4);
+//        test.addQuestion(question2);
+//        test.addQuestion(question3);
+//        test.addQuestion(question4);
         testRepository.save(test);
     }
 }
