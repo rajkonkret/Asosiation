@@ -1,4 +1,4 @@
-package com.raj.DataBaseWithDTO.controller;
+package com.raj.DataBaseWithDTO.data;
 
 import com.raj.DataBaseWithDTO.model.Answer;
 import com.raj.DataBaseWithDTO.model.Question;
@@ -23,10 +23,10 @@ public class QiuzData implements CommandLineRunner {
 
 
         Test test = new Test("About everything");
-//        Question question = new Question("What is The Capital of India");
-//        question.addAnswer(new Answer("New Delhi", true));
-//        question.addAnswer(new Answer("Mumbai", false));
-//        question.addAnswer(new Answer("Kolkatta", false));
+        Question question = new Question("What is The Capital of India");
+        question.addAnswer(new Answer("New Delhi", true));
+        question.addAnswer(new Answer("Mumbai", false));
+        question.addAnswer(new Answer("Kolkatta", false));
         Question question2 = new Question("Who is CEO of Tesla Motors?");
         question2.addAnswer(new Answer("Bill Gates", false));
         question2.addAnswer(new Answer("Steve Jobs", false));
@@ -39,10 +39,10 @@ public class QiuzData implements CommandLineRunner {
         question4.addAnswer(new Answer("River Nile", true));
         question4.addAnswer(new Answer("River Amazon", false));
         question4.addAnswer(new Answer("River Godavari", false));
-  //      test.addQuestion(question);
-//        test.addQuestion(question2);
-//        test.addQuestion(question3);
-//        test.addQuestion(question4);
+        test.addQuestion(question);
+        test.addQuestion(question2);
+        test.addQuestion(question3);
+        test.addQuestion(question4);
         testRepository.save(test);
     }
 }
